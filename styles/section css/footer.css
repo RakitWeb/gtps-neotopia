@@ -1,0 +1,120 @@
+footer {
+    background: #f0faf5;
+    border-top: 1px solid var(--glass-border);
+}
+
+.footer-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 0;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.footer-col h3 {
+    font-family: 'Bungee', cursive;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.footer-col h4 {
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: var(--text-muted);
+    margin-bottom: 1.1rem;
+}
+
+.footer-brand-col p {
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 0.92rem;
+    max-width: 360px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.2rem;
+}
+
+.social-link {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid var(--glass-border);
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.social-link:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: rgba(0, 200, 83, 0.06);
+}
+
+.footer-links-col ul,
+.footer-contact-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footer-links-col li a,
+.footer-contact-col li a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links-col li a:hover,
+.footer-contact-col li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--glass-border);
+}
+
+.footer-bottom-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom-inner p {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .footer-main {
+        grid-template-columns: 1.5fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer-container {
+        padding: 4rem 1.5rem 0;
+    }
+
+    .footer-bottom-inner {
+        padding: 1.25rem 1.5rem;
+    }
+}

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Neotopia - Growtopia Private Server</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="images/icon-gtps/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icon-gtps/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/icon-gtps/favicon-16x16.png">
+        <link rel="manifest" href="images/icon-gtps/site.webmanifest">
+
+        <link rel="stylesheet" href="styles/loading.css">
+        <link rel="stylesheet" href="styles/cssreset.css">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="styles/section css/home.css">
+        <link rel="stylesheet" href="styles/section css/status.css">
+        <link rel="stylesheet" href="styles/section css/howtoplay.css">
+        <link rel="stylesheet" href="styles/section css/about.css">
+        <link rel="stylesheet" href="styles/section css/course.css">
+        <link rel="stylesheet" href="styles/section css/contact.css">
+        <link rel="stylesheet" href="styles/section css/footer.css">
+        <link rel="stylesheet" href="styles/section css/swiperjs.css">
+        <link rel="stylesheet" href="styles/section css/testimonials.css">
+        <link rel="stylesheet" href="styles/section css/faq.css">
+        <link rel="stylesheet" href="styles/section css/community.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div id="loading">
+                    <div style="--size: 64px; --dot-size: 6px; --dot-count: 6; --color: #00c853; --speed: 1s; --spread: 60deg;" class="dots">
+                        <div style="--i: 0;" class="dot"></div>
+                        <div style="--i: 1;" class="dot"></div>
+                        <div style="--i: 2;" class="dot"></div>
+                        <div style="--i: 3;" class="dot"></div>
+                        <div style="--i: 4;" class="dot"></div>
+                        <div style="--i: 5;" class="dot"></div>
+                    </div>
+                </div>
+                <nav class="navbar" id="navbar">
+                    <div class="logo">
+                        <a href="#home">
+                           <img src="./images/logo-gtps/logo-neotopia.png" width="98"/>
+                        </a>
+                    </div>
+                    <div class="checkbox-navbar">
+                        <input type="checkbox" id="hamburger-checkbox">
+                        <label for="hamburger-checkbox" class="hamburger" aria-label="Open navigation menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <ul>
+                            <a href="#home"><li id="nav-home-label">Home</li></a>
+                            <a href="#status"><li id="nav-status-label">Server Status</li></a>
+                            <a href="#how-to-play"><li id="nav-how-to-play-label">How To Play</li></a>
+                            <a href="#about"><li id="nav-about-label">About</li></a>
+                            <a href="#course"><li id="nav-roles-label">Roles</li></a>
+                            <a href="#testimonials"><li id="nav-testimonials-label">Testimonials</li></a>
+                            <a href="#faq"><li id="nav-faq-label">FAQ</li></a>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <section id="home">
+                    <div class="container-home">
+                        <div class="home-backdrop"></div>
+                        <div class="home-content-wrapper" data-aos="fade-up">
+                            <span class="eyebrow" id="hero-eyebrow">GTPS private server showcase</span>
+                            <img src="images/logo-gtps/logo-removebg-preview.png" alt="GTPS7 logo" class="hero-logo">
+                            <h1 id="hero-title">Lorem ipsum dolor sit amet</h1>
+                            <p id="hero-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                            </p>
+                            <div class="hero-actions">
+                                <a class="btn-conteiner primary-btn" id="hero-primary-link" href="https://discord.gg/Yxt2GYd2VM" target="_blank" rel="noreferrer">
+                                    <img src="images/home-gtps/discord-logo-png-7622.png" alt="Discord logo">
+                                    <span id="hero-primary-text">Join Discord</span>
+                                </a>
+                                <a class="btn-conteiner secondary-btn" id="hero-secondary-link" href="#status"><span id="hero-secondary-text">View Status</span></a>
+                            </div>
+                            <div class="hero-mini-stats">
+                                <div class="mini-card">
+                                    <span>Custom Worlds</span>
+                                    <strong>Lorem</strong>
+                                </div>
+                                <div class="mini-card">
+                                    <span>Daily Events</span>
+                                    <strong>Ipsum</strong>
+                                </div>
+                                <div class="mini-card">
+                                    <span>Rare Drops</span>
+                                    <strong>Dolor</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-panel" data-aos="fade-left" data-aos-delay="150">
+                            <div class="hero-panel-header">
+                                <span class="panel-tag" id="hero-panel-tag">Server pulse</span>
+                                <span class="panel-live"><span class="panel-live-dot"></span><span id="hero-panel-live-text">live theme</span></span>
+                            </div>
+                            <h2 id="hero-panel-title">Lorem ipsum gateway</h2>
+                            <p id="hero-panel-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis,
+                                dapibus posuere velit aliquet.
+                            </p>
+                            <div class="panel-grid">
+                                <div class="panel-item">
+                                    <span>01</span>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="panel-item">
+                                    <span>02</span>
+                                    <p>Consectetur adipiscing elit sed do.</p>
+                                </div>
+                                <div class="panel-item">
+                                    <span>03</span>
+                                    <p>Tempor incididunt ut labore.</p>
+                                </div>
+                                <div class="panel-item">
+                                    <span>04</span>
+                                    <p>Quis nostrud exercitation ullamco.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="male people">
+                            <img src="images/home-gtps/PEOPLE/MALE/MALE.png" alt="Growtopia male character">
+                        </div>
+                        <div class="female peoplef">
+                            <img src="images/home-gtps/PEOPLE/FEMALE/Female_MENTAHAN-removebg-preview.png" alt="Growtopia female character">
+                        </div>
+                    </div>
+                </section>
+
+                <section id="status">
+                    <div class="container-status">
+                        <div class="status-copy" data-aos="fade-right">
+                            <span class="section-label" id="status-section-label">Live endpoint</span>
+                            <h2 id="status-heading">Server Status</h2>
+                            <p id="status-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+                            </p>
+                            <div class="status-feature-list">
+                                <div class="status-feature">
+                                    <span>Realtime</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div class="status-feature">
+                                    <span>Players</span>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                                </div>
+                                <div class="status-feature">
+                                    <span>Uptime</span>
+                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-card" data-aos="fade-left" data-aos-delay="150">
+                            <div class="status-card-head">
+                                <div class="status-live-wrap">
+                                    <span id="status-dot" class="status-dot"></span>
+                                    <div>
+                                        <p class="status-card-title" id="status-monitor-label">GTPS Cloud Monitor</p>
+                                        <strong id="status-text">CHECKING</strong>
+                                    </div>
+                                </div>
+                                <p class="status-server-id"><span id="status-server-id-label">Server ID</span> <span id="status-server-id-value">1866</span></p>
+                            </div>
+                            <div class="status-metrics">
+                                <div class="metric-box">
+                                    <span id="status-players-label">Players Online</span>
+                                    <strong id="player-count">0</strong>
+                                </div>
+                                <div class="metric-box">
+                                    <span id="status-refresh-label">Refresh Rate</span>
+                                    <strong id="status-refresh-rate">30s</strong>
+                                </div>
+                                <div class="metric-box">
+                                    <span id="status-connection-label">Connection</span>
+                                    <strong id="status-connection">Waiting</strong>
+                                </div>
+                            </div>
+                            <div class="status-note">
+                                <p id="status-response">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Status sedang diambil dari endpoint live.</p>
+                            </div>
+                            <div class="status-updated-row">
+                                <span id="status-last-update-label">Last Update</span>
+                                <strong id="status-updated">-</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="how-to-play">
+                    <div class="container-howtoplay">
+                        <div class="howtoplay-copy" data-aos="fade-right">
+                            <span class="section-label" id="howtoplay-section-label">How To Play</span>
+                            <h2 id="howtoplay-heading">How To Play</h2>
+                            <p id="howtoplay-description">
+                                Ikuti langkah berikut untuk setup host di Android menggunakan Powertunnel.
+                            </p>
+                            <div class="howtoplay-steps-card">
+                                <h3 id="howtoplay-steps-title">Android Guide (Powertunnel)</h3>
+                                <ol id="howtoplay-steps-list" class="howtoplay-steps-list">
+                                    <li>1 - First, download Powertunnel APP from here.</li>
+                                    <li>2 - and then click on the "Powertunnel" button.</li>
+                                    <li>3 - It will copy the powertunnel host link.</li>
+                                    <li>4 - Then open the powertunnel app, click the three-line icon, and click on the host settings icon.</li>
+                                    <li>5 - Paste the copied powertunnel host URL. Also, change the host update period from 12 hours to on start.</li>
+                                    <li>6 - Now you can log in to your GTPS!</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="host-card" data-aos="fade-left" data-aos-delay="150">
+                            <div class="host-card-head">
+                                <span class="panel-tag" id="host-links-label">Link Hosts</span>
+                                <p id="host-links-note">Klik tombol untuk copy host ke clipboard.</p>
+                            </div>
+                            <div class="host-list" id="host-links-list">
+                                <button class="host-copy-button" type="button" data-copy-label="Copy VHost" data-copy-value="NeoTopia.txt">Copy VHost</button>
+                                <button class="host-copy-button" type="button" data-copy-label="Copy IOS Host (Surge 5)" data-copy-value="ios-surge5.conf">Copy IOS Host (Surge 5)</button>
+                                <button class="host-copy-button" type="button" data-copy-label="Copy Windows Host text" data-copy-value="windows-host.txt">Copy Windows Host text</button>
+                                <button class="host-copy-button" type="button" data-copy-label="Copy MacOS Host text" data-copy-value="macos-host.txt">Copy MacOS Host text</button>
+                            </div>
+                            <div class="host-download">
+                                <span id="howtoplay-download-prefix">Download Powertunnel APP:</span>
+                                <a id="howtoplay-download-link" href="https://github.com/krlvm/PowerTunnel-Android/releases/download/v2.6.3/PowerTunnel.apk" target="_blank" rel="noreferrer">here</a>
+                            </div>
+                            <p class="host-copy-status" id="host-copy-status" aria-live="polite">Pilih host di bawah untuk menyalin link.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="about">
+                    <div class="container-about">
+                        <div class="head-about" data-aos="fade-right">
+                            <span class="section-label" id="about-section-label">Showcase copy</span>
+                            <h1><span id="about-title-line-1">Lorem ipsum</span><br><span id="about-title-line-2">dolor sit</span></h1>
+                            <p id="about-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                            </p>
+                        </div>
+                        <div class="card card-1" data-aos="fade-up" data-aos-delay="100">
+                            <div class="logo-card">
+                                <img src="images/about-gtps/LIO.png" alt="Profile placeholder one" loading="lazy">
+                            </div>
+                            <h1>Lorem Ipsum</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare sem lacinia quam.</p>
+                        </div>
+                        <div class="card card-2" data-aos="fade-up" data-aos-delay="150">
+                            <div class="logo-card">
+                                <img src="images/about-gtps/tron.png" alt="Profile placeholder two" loading="lazy">
+                            </div>
+                            <h1>Dolor Sit</h1>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                        </div>
+                        <div class="card card-3" data-aos="fade-up" data-aos-delay="200">
+                            <div class="logo-card">
+                                <img src="images/about-gtps/ipanks.png" alt="Profile placeholder three" loading="lazy">
+                            </div>
+                            <h1>Amet Elit</h1>
+                            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+                        </div>
+                        <div class="container-about2" data-aos="fade-up">
+                            <div class="animate-container" data-aos="fade-up" data-aos-delay="100">
+                                <lottie-player>
+                                    <img src="images/about-gtps/image asset/pngegg.png" alt="GTPS decorative asset">
+                                </lottie-player>
+                            </div>
+                            <div class="container-about2-content" data-aos="fade-up" data-aos-delay="200">
+                                <span class="section-label" id="about-highlight-label">Highlighted block</span>
+                                <h5 id="about-highlight-title">Lorem ipsum amenities</h5>
+                                <hr>
+                                <div class="content-icon">
+                                    <h1>01. Lorem ipsum dolor</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                </div>
+                                <div class="content-icon">
+                                    <h1>02. Sit amet consectetur</h1>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+                                <div class="content-icon">
+                                    <h1>03. Elit sed do eiusmod</h1>
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                                </div>
+                                <a href="#course" id="about-highlight-link"><button class="read-button" id="about-highlight-button">Explore Demo</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="community">
+                    <div class="container-community" data-aos="fade-up">
+                        <div class="community-header-text">
+                            <span class="section-label" id="community-section-label">Community</span>
+                            <h2 id="community-heading">Join Our <span style="color: var(--primary-color);">Discord</span></h2>
+                            <p id="community-description">Connect with thousands of players, join voice channels, and stay up to date with the latest events and announcements.</p>
+                        </div>
+                        <div class="community-grid">
+                            <div class="community-module module-discord">
+                                <div class="module-header">
+                                    <svg class="module-icon" viewBox="0 0 127.14 96.36" fill="currentColor">
+                                        <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.14,46,96,53,91,65.69,84.69,65.69Z"/>
+                                    </svg>
+                                    <span>Join Discord</span>
+                                </div>
+                                <div id="discord-widget" class="discord-widget"></div>
+                            </div>
+                            <div class="community-module module-tips">
+                                <div class="module-header">
+                                    <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 2v4M12 22v-4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M22 12h-4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                                        <circle cx="12" cy="12" r="4"/>
+                                    </svg>
+                                    <span>Quick Tips</span>
+                                </div>
+                                <div class="module-body">
+                                    <ul class="tips-list">
+                                        <li>
+                                            <span class="tip-icon">1</span>
+                                            <div>
+                                                <strong>Use /register</strong>
+                                                <p>Register your account with the command <code>/register &lt;password&gt;</code> in-game.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="tip-icon">2</span>
+                                            <div>
+                                                <strong>Daily Rewards</strong>
+                                                <p>Login every day to claim your daily rewards and exclusive items.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="tip-icon">3</span>
+                                            <div>
+                                                <strong>Join Events</strong>
+                                                <p>Participate in daily events hosted by our staff team for rare prizes.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="tip-icon">4</span>
+                                            <div>
+                                                <strong>Stay Updated</strong>
+                                                <p>Follow our Discord announcements for updates, giveaways, and more.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="community-module module-rules">
+                                <div class="module-header">
+                                    <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    </svg>
+                                    <span>Server Rules</span>
+                                </div>
+                                <div class="module-body">
+                                    <ul class="rules-list">
+                                        <li>
+                                            <span class="rule-bullet"></span>
+                                            <span>Be respectful to all players and staff members.</span>
+                                        </li>
+                                        <li>
+                                            <span class="rule-bullet"></span>
+                                            <span>No hacking, cheating, or exploiting bugs.</span>
+                                        </li>
+                                        <li>
+                                            <span class="rule-bullet"></span>
+                                            <span>No spamming or advertising other servers.</span>
+                                        </li>
+                                        <li>
+                                            <span class="rule-bullet"></span>
+                                            <span>Follow staff instructions at all times.</span>
+                                        </li>
+                                        <li>
+                                            <span class="rule-bullet"></span>
+                                            <span>Keep chat family-friendly and appropriate.</span>
+                                        </li>
+                                        <li>
+                                            <span class="rule-bullet"></span>
+                                            <span>Do not share inappropriate content or links.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="course">
+                    <div class="container-course">
+                        <span class="section-label" id="roles-section-label" data-aos="fade-up">Card showcase</span>
+                        <h1 data-aos="fade-up"><span id="roles-title-text">Lorem ipsum role gallery</span> <br><span class="info-course" id="roles-subtitle">placeholder content for GTPS website demo</span></h1>
+                        <div class="card-course-container" data-aos="fade-up" data-aos-delay="50">
+                            <div class="card-course">
+                                <img src="images/roles-gtps/Doctor.png" alt="Doctor role preview" width="302" height="285">
+                                <span class="course-card-content">
+                                    <h4>Lorem Doctor</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis autem vel eum iure reprehenderit.</p>
+                                    <a href="https://discord.gg/ynzvTYjrZ3" target="_blank" rel="noreferrer"><button class="read-button">View Detail</button></a>
+                                </span>
+                            </div>
+                            <div class="card-course" data-aos="fade-up" data-aos-delay="100">
+                                <img src="images/roles-gtps/growpass.png" alt="Growpass role preview" width="302" height="285">
+                                <span class="course-card-content">
+                                    <h4>Lorem Pass</h4>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                                    <a href="https://discord.gg/ynzvTYjrZ3" target="_blank" rel="noreferrer"><button class="read-button">View Detail</button></a>
+                                </span>
+                            </div>
+                            <div class="card-course" data-aos="fade-up" data-aos-delay="150">
+                                <img src="images/roles-gtps/super supporter.png" alt="Supporter role preview" width="302" height="285">
+                                <span class="course-card-content">
+                                    <h4>Lorem Supporter</h4>
+                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia.</p>
+                                    <a href="https://discord.gg/ynzvTYjrZ3" target="_blank" rel="noreferrer"><button class="read-button">View Detail</button></a>
+                                </span>
+                            </div>
+                            <div class="card-course" data-aos="fade-up" data-aos-delay="200">
+                                <img src="images/roles-gtps/mods.png" alt="Moderator role preview" width="302" height="285">
+                                <span class="course-card-content">
+                                    <h4>Lorem Moderator</h4>
+                                    <p>Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+                                    <a href="https://discord.gg/ynzvTYjrZ3" target="_blank" rel="noreferrer"><button class="read-button">View Detail</button></a>
+                                </span>
+                            </div>
+                            <div class="card-course" data-aos="fade-up" data-aos-delay="250">
+                                <img src="images/roles-gtps/devs.png" alt="Developer role preview" width="302" height="285">
+                                <span class="course-card-content">
+                                    <h4>Lorem Developer</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.</p>
+                                    <a href="https://discord.gg/ynzvTYjrZ3" target="_blank" rel="noreferrer"><button class="read-button">View Detail</button></a>
+                                </span>
+                            </div>
+                            <div class="card-course" data-aos="fade-up" data-aos-delay="300">
+                                <img src="images/roles-gtps/super dev.png" alt="Super developer role preview" width="302" height="285">
+                                <span class="course-card-content">
+                                    <h4>Lorem Supreme</h4>
+                                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</p>
+                                    <a href="https://discord.gg/ynzvTYjrZ3" target="_blank" rel="noreferrer"><button class="read-button">View Detail</button></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="testimonials">
+                    <div class="container-testimonials">
+                        <span class="section-label" id="testimonials-section-label" data-aos="fade-up">Testimonials</span>
+                        <h1 id="testimonials-title" data-aos="fade-up">What Our <span style="color: var(--primary-color);">Players</span> Say</h1>
+                        <p id="testimonials-subtitle" data-aos="fade-up" class="testimonials-subtitle">Real feedback from our growing community</p>
+                        <div class="testimonial-swiper-wrapper" data-aos="fade-up" data-aos-delay="100">
+                            <swiper-container class="testimonialSwiper" pagination="true" pagination-clickable="true" loop="true" autoplay-delay="4000" autoplay-disable-on-interaction="false" space-between="24" slides-per-view="1" breakpoints='{"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}'>
+                                <swiper-slide class="testimonial-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-stars">★★★★★</div>
+                                        <p class="testimonial-text">"Neotopia is hands down the best GTPS I've ever played. The custom worlds are incredible and the staff truly cares about the community. Been playing for months and it keeps getting better!"</p>
+                                        <div class="testimonial-profile">
+                                            <div class="testimonial-avatar-wrapper">
+                                                <img src="images/about-gtps/LIO.png" alt="Alex Rivera" class="testimonial-avatar" loading="lazy">
+                                                <span class="testimonial-avatar-badge">★</span>
+                                            </div>
+                                            <div class="testimonial-info">
+                                                <strong class="testimonial-name">Alex Rivera</strong>
+                                                <span class="testimonial-role">Pro Player</span>
+                                            </div>
+                                            <span class="testimonial-tag">Verified</span>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide class="testimonial-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-stars">★★★★★</div>
+                                        <p class="testimonial-text">"The daily events and giveaways are amazing! I've never been part of such an active GTPS community. The custom items and worlds make this server truly special."</p>
+                                        <div class="testimonial-profile">
+                                            <div class="testimonial-avatar-wrapper">
+                                                <img src="images/about-gtps/tron.png" alt="Sarah Chen" class="testimonial-avatar" loading="lazy">
+                                                <span class="testimonial-avatar-badge">★</span>
+                                            </div>
+                                            <div class="testimonial-info">
+                                                <strong class="testimonial-name">Sarah Chen</strong>
+                                                <span class="testimonial-role">Beta Tester</span>
+                                            </div>
+                                            <span class="testimonial-tag">Verified</span>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide class="testimonial-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-stars">★★★★★</div>
+                                        <p class="testimonial-text">"What makes Neotopia stand out is the community. Everyone is so welcoming and helpful. The staff responds quickly to any issues. Couldn't ask for a better GTPS experience!"</p>
+                                        <div class="testimonial-profile">
+                                            <div class="testimonial-avatar-wrapper">
+                                                <img src="images/about-gtps/ipanks.png" alt="Mike Johnson" class="testimonial-avatar" loading="lazy">
+                                                <span class="testimonial-avatar-badge">★</span>
+                                            </div>
+                                            <div class="testimonial-info">
+                                                <strong class="testimonial-name">Mike Johnson</strong>
+                                                <span class="testimonial-role">Community Manager</span>
+                                            </div>
+                                            <span class="testimonial-tag tag-staff">Staff</span>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide class="testimonial-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-stars">★★★★★</div>
+                                        <p class="testimonial-text">"The custom features in Neotopia are next level! From unique worlds to exclusive items, there's always something new to discover. This server sets the standard for GTPS."</p>
+                                        <div class="testimonial-profile">
+                                            <div class="testimonial-avatar-wrapper">
+                                                <img src="images/about-gtps/LIO.png" alt="Emily Davis" class="testimonial-avatar" loading="lazy">
+                                                <span class="testimonial-avatar-badge">★</span>
+                                            </div>
+                                            <div class="testimonial-info">
+                                                <strong class="testimonial-name">Emily Davis</strong>
+                                                <span class="testimonial-role">Top Contributor</span>
+                                            </div>
+                                            <span class="testimonial-tag">Verified</span>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide class="testimonial-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-stars">★★★★★</div>
+                                        <p class="testimonial-text">"I've tried many GTPS servers but Neotopia is the only one that kept me coming back. The events are fun, the economy is balanced, and the staff truly listens to player feedback."</p>
+                                        <div class="testimonial-profile">
+                                            <div class="testimonial-avatar-wrapper">
+                                                <img src="images/about-gtps/tron.png" alt="James Wong" class="testimonial-avatar" loading="lazy">
+                                                <span class="testimonial-avatar-badge">★</span>
+                                            </div>
+                                            <div class="testimonial-info">
+                                                <strong class="testimonial-name">James Wong</strong>
+                                                <span class="testimonial-role">Moderator</span>
+                                            </div>
+                                            <span class="testimonial-tag tag-staff">Staff</span>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                            </swiper-container>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="faq">
+                    <div class="container-faq">
+                        <span class="section-label" id="faq-section-label" data-aos="fade-up">FAQ</span>
+                        <h1 id="faq-title" data-aos="fade-up">Frequently Asked <span style="color: var(--primary-color);">Questions</span></h1>
+                        <p id="faq-description" data-aos="fade-up">Everything you need to know about Neotopia. Can't find what you're looking for? Reach out to our community on Discord.</p>
+                        <div class="faq-list" data-aos="fade-up" data-aos-delay="100">
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFaq(this)">
+                                    <span>What is Neotopia?</span>
+                                    <span class="faq-question-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Neotopia is a Growtopia Private Server that offers a unique gaming experience with custom worlds, daily events, and an active community. It is completely free to play and join.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFaq(this)">
+                                    <span>How do I connect to Neotopia?</span>
+                                    <span class="faq-question-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>You can connect by using PowerTunnel on Android or by modifying your hosts file on Windows, macOS, or iOS. Check our How To Play section for detailed step-by-step guides.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFaq(this)">
+                                    <span>Is Neotopia free to play?</span>
+                                    <span class="faq-question-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Yes, Neotopia is completely free to play. There are no hidden fees or premium subscriptions required to enjoy the full experience.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFaq(this)">
+                                    <span>How often are events held?</span>
+                                    <span class="faq-question-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>We host daily events and special seasonal events throughout the year. Follow our Discord server to stay updated on upcoming events and activities.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question" onclick="toggleFaq(this)">
+                                    <span>Can I become a staff member?</span>
+                                    <span class="faq-question-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>We regularly open applications for moderators, developers, and other staff positions. Keep an eye on our Discord announcements for when applications open.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-main">
+                        <div class="footer-col footer-brand-col">
+                            <h3 id="footer-title">Neotopia</h3>
+                            <p id="footer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                            <div class="footer-social">
+                                <a href="https://discord.gg/Yxt2GYd2VM" target="_blank" rel="noreferrer" class="social-link" aria-label="Discord">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-col footer-links-col">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#home" id="footer-home-label">Home</a></li>
+                                <li><a href="#status" id="footer-status-label">Server Status</a></li>
+                                <li><a href="#how-to-play" id="footer-howtoplay-label">How To Play</a></li>
+                                <li><a href="#about" id="footer-about-label">About</a></li>
+                                <li><a href="#course" id="footer-roles-label">Roles</a></li>
+                                <li><a href="#testimonials" id="footer-testimonials-label">Testimonials</a></li>
+                                <li><a href="#faq" id="footer-faq-label">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col footer-contact-col">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="https://discord.gg/Yxt2GYd2VM" target="_blank" rel="noreferrer">Discord</a></li>
+                                <li><a href="mailto:support@neogtps.com">support@neogtps.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-inner">
+                        <p id="footer-copyright">&copy; 2026 Neotopia. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+        <script src="javascript/footer/footer.js"></script>
+        <script src="javascript/course/swiper-custom.js"></script>
+        <script src="javascript/loading.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 900,
+                once: true,
+                offset: 80
+            });
+        </script>
+        <script src="config.js"></script>
+        <script src="javascript/site-config.js"></script>
+        <script src="javascript/server-status.js"></script>
+        <script src="javascript/navbar.js"></script>
+        <script src="javascript/community.js"></script>
+        
+        <script>
+            function toggleFaq(button) {
+                const item = button.closest('.faq-item');
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item.active').forEach(el => el.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
+            }
+        </script>
+    </body>
+</html>
