@@ -1,0 +1,100 @@
+how-to-play card V2
+
+ <section id="how-to-play">
+                    <div class="container-howtoplay">
+                        <div class="howtoplay-copy" data-aos="fade-right">
+                            <span class="section-label" id="howtoplay-section-label">How To Play</span>
+                            <h2 id="howtoplay-heading">How To Play</h2>
+                            <p id="howtoplay-description">
+                                Ikuti langkah berikut untuk setup host di Android menggunakan Powertunnel.
+                            </p>
+                            <div class="howtoplay-steps-card">
+                                <h3 id="howtoplay-steps-title">Android Guide (Powertunnel)</h3>
+                                <ol id="howtoplay-steps-list" class="howtoplay-steps-list">
+                                    <li>1 - First, download Powertunnel APP from here.</li>
+                                    <li>2 - and then click on the "Powertunnel" button.</li>
+                                    <li>3 - It will copy the powertunnel host link.</li>
+                                    <li>4 - Then open the powertunnel app, click the three-line icon, and click on the host settings icon.</li>
+                                    <li>5 - Paste the copied powertunnel host URL. Also, change the host update period from 12 hours to on start.</li>
+                                    <li>6 - Now you can log in to your GTPS!</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- HOST CARD DENGAN TOGGLE -->
+                        <div class="host-card power-tunnel-card">
+                        
+                            <!-- TAB / TOGGLE -->
+                            <div class="pt-tabs">
+                                <button class="pt-tab active" data-tab="android">Android</button>
+                                <button class="pt-tab" data-tab="ios">iOS</button>
+                                <button class="pt-tab" data-tab="windows">Windows</button>
+                                <button class="pt-tab" data-tab="mac">Mac</button>
+                            </div>
+                        
+                            <!-- CONTENT PAGES -->
+                            <div class="pt-tab-content" id="android">
+                                <!-- Android Content (mirip screenshot) -->
+                                <div class="pt-steps">
+                                    <div class="pt-step">
+                                        <div class="pt-number">1</div>
+                                        <div class="pt-step-content">
+                                            <strong>Install PowerTunnel</strong>
+                                            <p>Download from official releases and install the APK.</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-step">
+                                        <div class="pt-number">2</div>
+                                        <div class="pt-step-content">
+                                            <strong>Configure Host Settings</strong>
+                                            <p>Open PowerTunnel → menu (≡) → Host Settings → Host list URL</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-step">
+                                        <div class="pt-number">3</div>
+                                        <div class="pt-step-content">
+                                            <strong>Paste URL</strong>
+                                            <p>Click button below and paste into PowerTunnel.</p>
+                                            <div class="pt-action-buttons">
+                                                <button class="host-copy-button" data-copy-value="">Copy URL</button>
+                                                <button class="pt-download-btn">Download</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pt-step">
+                                        <div class="pt-number">4</div>
+                                        <div class="pt-step-content">
+                                            <strong>Start</strong>
+                                            <p>Set Update period to <strong>On start</strong>, then press Start.</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-step">
+                                        <div class="pt-number">5</div>
+                                        <div class="pt-step-content">
+                                            <strong>Launch Growtopia</strong>
+                                            <p>Open Growtopia and click Play.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- iOS Content (contoh) -->
+                            <div class="pt-tab-content hidden" id="ios">
+                                <h3 style="color:#60a5fa; text-align:center; margin:2rem 0;">iOS Guide (Surge 5)</h3>
+                                <p>Coming soon or paste your iOS guide here...</p>
+                            </div>
+                        
+                            <!-- Windows Content -->
+                            <div class="pt-tab-content hidden" id="windows">
+                                <h3 style="color:#60a5fa; text-align:center; margin:2rem 0;">Windows Guide</h3>
+                                <p>Coming soon...</p>
+                            </div>
+                        
+                            <!-- Mac Content -->
+                            <div class="pt-tab-content hidden" id="mac">
+                                <h3 style="color:#60a5fa; text-align:center; margin:2rem 0;">Mac Guide</h3>
+                                <p>Coming soon...</p>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </section>
