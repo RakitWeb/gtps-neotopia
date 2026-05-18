@@ -1,5 +1,5 @@
 #community {
-    background: var(--bg-light);
+    background: oklch(13% 0.028 261.692);
     padding: 4rem 0;
 }
 
@@ -77,6 +77,7 @@
 .module-body {
     padding: 1rem 1.25rem;
     flex: 1;
+    background: oklch(16% 0.034 264.665);
 }
 
 
@@ -88,7 +89,7 @@
     scrollbar-width: thin;
     max-height:  250px;
     box-shadow: none;
-    background: #1e1f22;
+    background: oklch(21% 0.034 264.665);
     flex: 1;
 }
 

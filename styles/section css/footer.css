@@ -1,5 +1,5 @@
 footer {
-    background: #f0faf5;
+    background: oklch(13% 0.028 261.692);
     border-top: 1px solid var(--glass-border);
 }
 

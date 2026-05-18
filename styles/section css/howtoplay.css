@@ -1,6 +1,6 @@
 #how-to-play {
     background:
-        linear-gradient(180deg, rgba(245, 252, 248, 0.78) 0%, rgba(240, 250, 245, 0.94) 55%, rgba(245, 252, 248, 0.98) 100%);
+   oklch(13% 0.028 261.692);
 }
 
 .container-howtoplay {

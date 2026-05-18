@@ -1,6 +1,6 @@
 #about {
     background:
-        linear-gradient(180deg, rgba(245, 252, 248, 0), rgba(240, 250, 245, 0.6) 12%, rgba(245, 252, 248, 0.95) 100%);
+   oklch(13% 0.028 261.692)
 }
 
 .container-about {
@@ -34,7 +34,7 @@
     padding: 1.3rem;
     border-radius: 26px;
     border: 1px solid var(--glass-border);
-    background: var(--bg-panel);
+    background: oklch(12.9% 0.042 264.695);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: var(--shadow-soft);

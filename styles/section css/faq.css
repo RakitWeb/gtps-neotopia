@@ -1,6 +1,6 @@
 #faq {
     background:
-        linear-gradient(180deg, rgba(240, 250, 245, 0.98) 0%, rgba(245, 252, 248, 0.96) 100%);
+    oklch(13% 0.028 261.692)
 }
 
 .container-faq {

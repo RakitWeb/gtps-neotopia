@@ -1,29 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Oxanium:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --bg-white: #ffffff;
-    --bg-light: #f0faf5;
-    --bg-soft: #e8f5e9;
-    --bg-glass: rgba(255, 255, 255, 0.6);
-    --bg-panel: rgba(255, 255, 255, 0.82);
-    --bg-panel-soft: rgba(240, 250, 245, 0.74);
-    --line-color: rgba(0, 200, 83, 0.12);
-    --primary-color: #00c853;
-    --primary-soft: rgba(0, 200, 83, 0.1);
-    --primary-glow: rgba(0, 200, 83, 0.25);
-
-    --secondary-color: #00e676;
-    --secondary-soft: rgba(0, 230, 118, 0.12);
-    --text-main: #1a2332;
-    --text-muted: #5a6b7d;
-    --text-light: #8a9bb0;
-    --danger-color: #ff5252;
-    --success-color: #00c853;
-    --shadow-soft: 0 8px 32px rgba(0, 200, 83, 0.08);
-    --shadow-strong: 0 20px 60px rgba(0, 0, 0, 0.06);
-    --border-light: rgba(0, 200, 83, 0.12);
-    --gradient-green: linear-gradient(135deg, #00c853, #00e676);
-    --glass-border: rgba(0, 200, 83, 0.1);
+    --bg: oklch(13% 0.028 261.692);
+    --bg2: #050805;
+    --card: rgba(15, 23, 18, 0.95);
+    --glass: rgba(16, 35, 22, 0.65);
+    --primary: #00ff85;
+    --primary2: #39ff14;
+    --accent: #00e676;
+    --text: #e0ffe9;
+    --text-muted: #a3c9b0;
+    --border: rgba(0, 255, 133, 0.25);
+    --shadow: 0 10px 40px rgba(0, 255, 133, 0.15);
 }
 
 html {
@@ -32,12 +20,12 @@ html {
 
 body {
     font-family: 'Oxanium', sans-serif;
-    background-color: #f5fcf8;
+    background-color: oklch(13% 0.028 261.692);
     background-image:
-        linear-gradient(rgba(0, 200, 83, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 200, 83, 0.04) 1px, transparent 1px);
+        linear-gradient(rgba(0, 255, 133, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 133, 0.04) 1px, transparent 1px);
     background-size: 60px 60px;
-    color: var(--text-main);
+    color: var(--text);
 }
 
 header {
@@ -56,17 +44,11 @@ header {
     align-items: center;
     justify-content: space-between;
     border-radius: 20px;
-    border: 1px solid var(--glass-border);
-    background: var(--bg-glass);
+    border: 1px solid var(--border);
+    background: var(--glass);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: var(--shadow-soft);
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.navbar .logo {
-    display: flex;
-    align-items: center;
+    transition: all 0.3s ease;
 }
 
 .navbar .logo a {
@@ -77,11 +59,8 @@ header {
     font-family: 'Bungee', cursive;
     font-size: clamp(1.3rem, 2vw, 1.75rem);
     letter-spacing: 0.12rem;
-    color: var(--primary-color);
-}
-
-.navbar .checkbox-navbar {
-    position: relative;
+    color: var(--primary);
+    text-shadow: 0 0 20px var(--primary);
 }
 
 .navbar .checkbox-navbar ul {
@@ -94,17 +73,16 @@ header {
     gap: 0.55rem;
     padding: 1rem;
     border-radius: 18px;
-    border: 1px solid var(--glass-border);
-    background: rgba(255, 255, 255, 0.96);
-    box-shadow: var(--shadow-strong);
+    border: 1px solid var(--border);
+    background: rgba(15, 23, 18, 0.98);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
-    transition: opacity 0.25s ease, transform 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .navbar .checkbox-navbar ul a {
-    color: var(--text-main);
+    color: var(--text);
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.02rem;
@@ -114,13 +92,14 @@ header {
     padding: 0.95rem 1rem;
     border-radius: 14px;
     border: 1px solid transparent;
-    background: rgba(0, 200, 83, 0.03);
-    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    background: rgba(0, 255, 133, 0.08);
+    transition: all 0.2s ease;
 }
 
 .navbar ul li:hover {
-    background: var(--primary-soft);
-    border-color: var(--border-light);
+    background: rgba(0, 255, 133, 0.2);
+    border-color: var(--primary);
+    color: var(--primary);
 }
 
 .navbar .checkbox-navbar .hamburger {
@@ -132,15 +111,15 @@ header {
     justify-content: center;
     gap: 6px;
     border-radius: 14px;
-    border: 1px solid var(--glass-border);
-    background: rgba(0, 200, 83, 0.04);
+    border: 1px solid var(--border);
+    background: rgba(0, 255, 133, 0.08);
     cursor: pointer;
-    transition: border-color 0.25s ease, background-color 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .navbar .checkbox-navbar .hamburger:hover {
-    background: var(--secondary-soft);
-    border-color: rgba(0, 230, 118, 0.3);
+    background: rgba(0, 230, 118, 0.2);
+    border-color: var(--primary);
 }
 
 .hamburger span {
@@ -148,8 +127,8 @@ header {
     width: 22px;
     height: 2px;
     border-radius: 999px;
-    background: var(--text-main);
-    transition: transform 0.25s ease, opacity 0.25s ease;
+    background: var(--text);
+    transition: all 0.25s ease;
 }
 
 #hamburger-checkbox {
@@ -175,27 +154,26 @@ header {
 }
 
 .scrolled {
-    background: rgba(255, 255, 255, 0.92) !important;
+    background: rgba(10, 15, 10, 0.95) !important;
+    box-shadow: 0 15px 35px rgba(0, 255, 133, 0.2) !important;
 }
 
 .active {
-    color: var(--primary-color) !important;
+    color: var(--primary) !important;
 }
 
 .active li {
-    background: linear-gradient(135deg, var(--primary-soft), var(--secondary-soft));
-    border-color: var(--border-light);
+    background: rgba(0, 255, 133, 0.15);
+    border-color: var(--primary);
 }
 
 @media only screen and (min-width: 992px) {
     .navbar {
         padding: 1rem 1.4rem;
     }
-
     .navbar .checkbox-navbar .hamburger {
         display: none;
     }
-
     .navbar .checkbox-navbar ul {
         position: static;
         width: auto;
@@ -210,7 +188,6 @@ header {
         pointer-events: auto;
         transform: none;
     }
-
     .navbar ul li {
         padding: 0.85rem 1.1rem;
         background: transparent;
