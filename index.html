@@ -40,31 +40,41 @@
                         <div style="--i: 5;" class="dot"></div>
                     </div>
                 </div>
-                <nav class="navbar" id="navbar">
-                    <div class="logo">
-                        <a href="#home">
-                           <img src="./images/logo-gtps/logo-neotopia.png" width="98"/>
-                        </a>
-                    </div>
-                    <div class="checkbox-navbar">
-                        <input type="checkbox" id="hamburger-checkbox">
-                        <label for="hamburger-checkbox" class="hamburger" aria-label="Open navigation menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </label>
-                        <ul>
-                            <a href="#home"><li id="nav-home-label">Home</li></a>
-                            <a href="#status"><li id="nav-status-label">Server Status</li></a>
-                            <a href="#how-to-play"><li id="nav-how-to-play-label">How To Play</li></a>
-                            <a href="#about"><li id="nav-about-label">About</li></a>
-                            <a href="#course"><li id="nav-roles-label">Roles</li></a>
-                            <a href="#testimonials"><li id="nav-testimonials-label">Testimonials</li></a>
-                            <a href="#faq"><li id="nav-faq-label">FAQ</li></a>
-                        </ul>
-                    </div>
-                </nav>
+<nav class="navbar" id="navbar">
+    <div class="logo">
+        <a href="#home">
+            <img src="./images/logo-gtps/logo-neotopia.png" width="98"/>
+        </a>
+    </div>
+    <div class="checkbox-navbar">
+        <input type="checkbox" id="hamburger-checkbox">
+        <label for="hamburger-checkbox" class="hamburger" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul>
+            <a href="#home"><li id="nav-home-label">Home</li></a>
+            <a href="#status"><li id="nav-status-label">Server Status</li></a>
+            <a href="#how-to-play"><li id="nav-how-to-play-label">How To Play</li></a>
+            <a href="#about"><li id="nav-about-label">About</li></a>
+            <a href="#course"><li id="nav-roles-label">Roles</li></a>
+            <a href="#testimonials"><li id="nav-testimonials-label">Testimonials</li></a>
+            <a href="#faq"><li id="nav-faq-label">FAQ</li></a>
+        </ul>
+    </div>
+</nav>
             </header>
+<!-- Compact Live Status Widget -->
+<div class="compact-live-status" data-aos="fade-left" data-aos-delay="150">
+    <div class="compact-status-header">
+        <span class="compact-panel-tag">SERVER STATUS</span>
+        <span class="compact-panel-live">
+            <span class="compact-panel-live-dot"></span>
+            <span>LIVE • <span id="compact-player-count">3,456</span> Players</span>
+        </span>
+    </div>
+</div>
             <main>
             <section id="home">
                 <div class="container-home">
@@ -133,65 +143,71 @@
                 </div>
             </section>
 
-                <section id="status">
-                    <div class="container-status">
-                        <div class="status-copy" data-aos="fade-right">
-                            <span class="section-label" id="status-section-label">Live endpoint</span>
-                            <h2 id="status-heading">Server Status</h2>
-                            <p id="status-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse.
-                            </p>
-                            <div class="status-feature-list">
-                                <div class="status-feature">
-                                    <span>Realtime</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                                <div class="status-feature">
-                                    <span>Players</span>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-                                </div>
-                                <div class="status-feature">
-                                    <span>Uptime</span>
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit.</p>
-                                </div>
+            <section id="status">
+                <div class="container-status">
+                    <div class="status-copy" data-aos="fade-right">
+                        <span class="section-label" id="status-section-label">Endpoint Live</span>
+                        <h2 id="status-heading">Status Server</h2>
+                        <p id="status-description">
+                            Pantau performa dan ketersediaan server kami secara langsung. Data diperbarui secara real-time untuk memastikan pengalaman bermain yang lancar.
+                        </p>
+                        <div class="status-feature-list">
+                            <div class="status-feature">
+                                <span class="feature-title">Real-time</span>
+                                <p>Sinkronisasi data langsung dari server tanpa perlu memuat ulang halaman.</p>
                             </div>
-                        </div>
-                        <div class="status-card" data-aos="fade-left" data-aos-delay="150">
-                            <div class="status-card-head">
-                                <div class="status-live-wrap">
-                                    <span id="status-dot" class="status-dot"></span>
-                                    <div>
-                                        <p class="status-card-title" id="status-monitor-label">GTPS Cloud Monitor</p>
-                                        <strong id="status-text">CHECKING</strong>
-                                    </div>
-                                </div>
-                                <p class="status-server-id"><span id="status-server-id-label">Server ID</span> <span id="status-server-id-value">1866</span></p>
+                            <div class="status-feature">
+                                <span class="feature-title">Metrik Pemain</span>
+                                <p>Lihat jumlah pemain yang sedang aktif di dalam game saat ini.</p>
                             </div>
-                            <div class="status-metrics">
-                                <div class="metric-box">
-                                    <span id="status-players-label">Players Online</span>
-                                    <strong id="player-count">0</strong>
-                                </div>
-                                <div class="metric-box">
-                                    <span id="status-refresh-label">Refresh Rate</span>
-                                    <strong id="status-refresh-rate">30s</strong>
-                                </div>
-                                <div class="metric-box">
-                                    <span id="status-connection-label">Connection</span>
-                                    <strong id="status-connection">Waiting</strong>
-                                </div>
-                            </div>
-                            <div class="status-note">
-                                <p id="status-response">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Status sedang diambil dari endpoint live.</p>
-                            </div>
-                            <div class="status-updated-row">
-                                <span id="status-last-update-label">Last Update</span>
-                                <strong id="status-updated">-</strong>
+                            <div class="status-feature">
+                                <span class="feature-title">Uptime Ringkas</span>
+                                <p>Sistem monitoring berkala menjamin transparansi kestabilan server.</p>
                             </div>
                         </div>
                     </div>
-                </section>
+            
+                    <div class="status-card" data-aos="fade-left" data-aos-delay="150">
+                        <div class="status-card-head">
+                            <div class="status-live-wrap">
+                                <span id="status-dot" class="status-dot status-checking"></span>
+                                <div>
+                                    <p class="status-card-title" id="status-monitor-label">GTPS Cloud Monitor</p>
+                                    <strong id="status-text" class="text-checking">MEMERIKSA...</strong>
+                                </div>
+                            </div>
+                            <p class="status-server-id">
+                                <span id="status-server-id-label">ID Server</span> 
+                                <span id="status-server-id-value">1866</span>
+                            </p>
+                        </div>
+                        
+                        <div class="status-metrics">
+                            <div class="metric-box">
+                                <span id="status-players-label">Pemain Online</span>
+                                <strong id="player-count">0</strong>
+                            </div>
+                            <div class="metric-box">
+                                <span id="status-refresh-label">Interval Refresh</span>
+                                <strong id="status-refresh-rate">30s</strong>
+                            </div>
+                            <div class="metric-box">
+                                <span id="status-connection-label">Koneksi</span>
+                                <strong id="status-connection">Menunggu</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="status-note">
+                            <p id="status-response">Mengambil data terbaru dari endpoint live server. Mohon tunggu sejenak.</p>
+                        </div>
+                        
+                        <div class="status-updated-row">
+                            <span id="status-last-update-label">Pembaruan Terakhir</span>
+                            <strong id="status-updated">-</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
                 <section id="how-to-play">
                     <div class="container-howtoplay">
@@ -213,22 +229,81 @@
                                 </ol>
                             </div>
                         </div>
-                        <div class="host-card" data-aos="fade-left" data-aos-delay="150">
-                            <div class="host-card-head">
-                                <span class="panel-tag" id="host-links-label">Link Hosts</span>
-                                <p id="host-links-note">Klik tombol untuk copy host ke clipboard.</p>
+                        <!-- HOST CARD DENGAN TOGGLE -->
+                        <div class="host-card power-tunnel-card">
+                        
+                            <!-- TAB / TOGGLE -->
+                            <div class="pt-tabs">
+                                <button class="pt-tab active" data-tab="android">Android</button>
+                                <button class="pt-tab" data-tab="ios">iOS</button>
+                                <button class="pt-tab" data-tab="windows">Windows</button>
+                                <button class="pt-tab" data-tab="mac">Mac</button>
                             </div>
-                            <div class="host-list" id="host-links-list">
-                                <button class="host-copy-button" type="button" data-copy-label="Copy VHost" data-copy-value="NeoTopia.txt">Copy VHost</button>
-                                <button class="host-copy-button" type="button" data-copy-label="Copy IOS Host (Surge 5)" data-copy-value="ios-surge5.conf">Copy IOS Host (Surge 5)</button>
-                                <button class="host-copy-button" type="button" data-copy-label="Copy Windows Host text" data-copy-value="windows-host.txt">Copy Windows Host text</button>
-                                <button class="host-copy-button" type="button" data-copy-label="Copy MacOS Host text" data-copy-value="macos-host.txt">Copy MacOS Host text</button>
+                        
+                            <!-- CONTENT PAGES -->
+                            <div class="pt-tab-content" id="android">
+                                <!-- Android Content (mirip screenshot) -->
+                                <div class="pt-steps">
+                                    <div class="pt-step">
+                                        <div class="pt-number">1</div>
+                                        <div class="pt-step-content">
+                                            <strong>Install PowerTunnel</strong>
+                                            <p>Download from official releases and install the APK.</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-step">
+                                        <div class="pt-number">2</div>
+                                        <div class="pt-step-content">
+                                            <strong>Configure Host Settings</strong>
+                                            <p>Open PowerTunnel → menu (≡) → Host Settings → Host list URL</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-step">
+                                        <div class="pt-number">3</div>
+                                        <div class="pt-step-content">
+                                            <strong>Paste URL</strong>
+                                            <p>Click button below and paste into PowerTunnel.</p>
+                                            <div class="pt-action-buttons">
+                                                <button class="host-copy-button" data-copy-value="NeoTopia.txt">Copy URL</button>
+                                                <button class="pt-download-btn">Download</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pt-step">
+                                        <div class="pt-number">4</div>
+                                        <div class="pt-step-content">
+                                            <strong>Start</strong>
+                                            <p>Set Update period to <strong>On start</strong>, then press Start.</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-step">
+                                        <div class="pt-number">5</div>
+                                        <div class="pt-step-content">
+                                            <strong>Launch Growtopia</strong>
+                                            <p>Open Growtopia and click Play.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="host-download">
-                                <span id="howtoplay-download-prefix">Download Powertunnel APP:</span>
-                                <a id="howtoplay-download-link" href="https://github.com/krlvm/PowerTunnel-Android/releases/download/v2.6.3/PowerTunnel.apk" target="_blank" rel="noreferrer">here</a>
+                        
+                            <!-- iOS Content (contoh) -->
+                            <div class="pt-tab-content hidden" id="ios">
+                                <h3 style="color:#60a5fa; text-align:center; margin:2rem 0;">iOS Guide (Surge 5)</h3>
+                                <p>Coming soon or paste your iOS guide here...</p>
                             </div>
-                            <p class="host-copy-status" id="host-copy-status" aria-live="polite">Pilih host di bawah untuk menyalin link.</p>
+                        
+                            <!-- Windows Content -->
+                            <div class="pt-tab-content hidden" id="windows">
+                                <h3 style="color:#60a5fa; text-align:center; margin:2rem 0;">Windows Guide</h3>
+                                <p>Coming soon...</p>
+                            </div>
+                        
+                            <!-- Mac Content -->
+                            <div class="pt-tab-content hidden" id="mac">
+                                <h3 style="color:#60a5fa; text-align:center; margin:2rem 0;">Mac Guide</h3>
+                                <p>Coming soon...</p>
+                            </div>
+                        
                         </div>
                     </div>
                 </section>
@@ -644,6 +719,13 @@
         <script src="javascript/footer/footer.js"></script>
         <script src="javascript/course/swiper-custom.js"></script>
         <script src="javascript/loading.js"></script>
+        // Paste the code inside the <body> tag
+        <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+        <script>
+            var sf = new Snowflakes({
+                color: "#00ff11"
+            });
+        </script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init({
@@ -658,6 +740,26 @@
         <script src="javascript/navbar.js"></script>
         <script src="javascript/community.js"></script>
         <script src="javascript/effect.js"></script>
+        <script>
+        document.querySelectorAll('.pt-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active from all tabs
+                document.querySelectorAll('.pt-tab').forEach(t => t.classList.remove('active'));
+                
+                // Add active to clicked tab
+                tab.classList.add('active');
+                
+                // Hide all contents
+                document.querySelectorAll('.pt-tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Show selected content
+                const target = document.getElementById(tab.dataset.tab);
+                if (target) target.classList.add('active');
+            });
+        });
+        </script>
         
         <script>
             function toggleFaq(button) {
