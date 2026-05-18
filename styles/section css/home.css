@@ -1,19 +1,15 @@
 * {
     box-sizing: border-box;
 }
-
 main {
     overflow: hidden;
 }
-
 section {
     position: relative;
 }
-
 #home {
     min-height: 100vh;
 }
-
 .container-home {
     position: relative;
     min-height: 100vh;
@@ -24,7 +20,6 @@ section {
     align-items: center;
     gap: 2rem;
 }
-
 .home-backdrop {
     position: absolute;
     margin-top: 12px;
@@ -35,7 +30,6 @@ section {
     border-radius: 15px;
     overflow: hidden;
 }
-
 .home-backdrop::before,
 .home-backdrop::after {
     content: '';
@@ -43,7 +37,6 @@ section {
     border-radius: 999px;
     filter: blur(60px);
 }
-
 .home-backdrop::before {
     width: 300px;
     height: 300px;
@@ -51,7 +44,6 @@ section {
     top: 12%;
     left: -60px;
 }
-
 .home-backdrop::after {
     width: 340px;
     height: 340px;
@@ -59,7 +51,6 @@ section {
     right: -70px;
     bottom: 20%;
 }
-
 .home-content-wrapper,
 .hero-panel,
 .people,
@@ -67,14 +58,12 @@ section {
     position: relative;
     z-index: 1;
 }
-
 .home-content-wrapper {
     max-width: 680px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
 .eyebrow {
     width: fit-content;
     padding: 0.5rem 0.85rem;
@@ -87,12 +76,10 @@ section {
     letter-spacing: 0.08rem;
     text-transform: uppercase;
 }
-
 .hero-logo {
     width: min(180px, 44vw);
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.08));
 }
-
 .home-content-wrapper h1 {
     font-family: 'Bungee', cursive;
     font-size: clamp(2.6rem, 9vw, 5.6rem);
@@ -100,7 +87,6 @@ section {
     color: #fff;
     text-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
 }
-
 .home-content-wrapper p {
     max-width: 620px;
     color: #fff;
@@ -108,13 +94,12 @@ section {
     line-height: 1.75;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
-
 .hero-actions {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 0.45rem;
 }
-
 .btn-conteiner {
     min-height: 56px;
     padding: 0.85rem 1.2rem;
@@ -131,19 +116,23 @@ section {
     letter-spacing: 0.03rem;
     transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
-
 .btn-conteiner img {
     width: 24px;
     height: 24px;
 }
-
 .btn-conteiner:hover {
     transform: translateY(-2px);
 }
 
-.btn-conteiner a {
-    text-decoration: none;
-    color: inherit;
+/* Perbaikan tombol di Mobile */
+@media only screen and (max-width: 767px) {
+    .btn-conteiner {
+        min-height: 52px;
+        padding: 0.75rem 1.1rem;
+        font-size: 13.5px;
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .primary-btn {
@@ -151,29 +140,24 @@ section {
     border-color: transparent;
     color: #fff;
 }
-
 .primary-btn:hover {
     background: linear-gradient(135deg, #00b84a, #00d466);
 }
-
 .secondary-btn {
     border-color: rgba(255, 255, 255, 0.25);
     background: rgba(255, 255, 255, 0.08);
     color: #fff;
 }
-
 .secondary-btn:hover {
     background: rgba(255, 255, 255, 0.15);
     border-color: rgba(255, 255, 255, 0.35);
 }
-
 .hero-mini-stats {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.85rem;
     margin-top: 0.85rem;
 }
-
 .mini-card {
     padding: 1rem;
     border-radius: 18px;
@@ -183,7 +167,6 @@ section {
     -webkit-backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
-
 .mini-card span {
     display: block;
     margin-bottom: 0.5rem;
@@ -192,12 +175,10 @@ section {
     text-transform: uppercase;
     letter-spacing: 0.08rem;
 }
-
 .mini-card strong {
     font-size: 1.25rem;
     color: #fff;
 }
-
 .hero-panel {
     justify-self: stretch;
     padding: 1.4rem;
@@ -208,7 +189,6 @@ section {
     -webkit-backdrop-filter: blur(16px);
     box-shadow: var(--shadow-soft);
 }
-
 .hero-panel-header {
     display: flex;
     align-items: center;
@@ -216,7 +196,6 @@ section {
     gap: 1rem;
     margin-bottom: 1rem;
 }
-
 .panel-tag,
 .section-label {
     display: inline-flex;
@@ -233,7 +212,6 @@ section {
     letter-spacing: 0.08rem;
     text-transform: uppercase;
 }
-
 .panel-live {
     display: inline-flex;
     align-items: center;
@@ -242,34 +220,29 @@ section {
     font-size: 0.9rem;
     font-weight: 700;
 }
-
 .panel-live-dot {
     width: 10px;
     height: 10px;
     border-radius: 999px;
     background: var(--success-color);
 }
-
 .hero-panel h2 {
     font-family: 'Bungee', cursive;
     font-size: clamp(1.6rem, 4vw, 2.4rem);
     line-height: 1.15;
     color: var(--text-main);
 }
-
 .hero-panel p {
     margin-top: 0.9rem;
     color: var(--text-muted);
     line-height: 1.7;
 }
-
 .panel-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.85rem;
     margin-top: 1.4rem;
 }
-
 .panel-item {
     min-height: 108px;
     padding: 1rem;
@@ -278,11 +251,9 @@ section {
     background: rgba(0, 200, 83, 0.03);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .panel-item:hover {
     transform: translateY(-2px);
 }
-
 .panel-item span {
     display: inline-flex;
     margin-bottom: 0.7rem;
@@ -290,13 +261,11 @@ section {
     font-size: 1.15rem;
     font-weight: 800;
 }
-
 .panel-item p {
     margin-top: 0;
     font-size: 0.95rem;
     line-height: 1.5;
 }
-
 .people,
 .peoplef {
     position: absolute;
@@ -304,77 +273,31 @@ section {
     pointer-events: none;
     z-index: 0;
 }
-
 .people {
     left: -10px;
 }
-
 .peoplef {
     right: 0;
 }
-
 .people img,
 .peoplef img {
     opacity: 0.85;
     filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.08));
 }
-
 .people img {
     width: min(240px, 27vw);
 }
-
 .peoplef img {
     width: min(140px, 16vw);
 }
 
-@media only screen and (max-width: 767px) {
-    .hero-mini-stats,
-    .panel-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .people,
-    .peoplef {
-        display: none;
-    }
-    .home-backdrop {
-        position: absolute;
-        margin-top: 0px;
-        inset: 0;
-        background:
-            linear-gradient(180deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)),
-            url('../../images/home-gtps/image_150623.png') center/cover no-repeat;
-        border-radius: 0px;
-        overflow: hidden;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .container-home {
-        grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
-        padding: 8.5rem 1.5rem 5rem;
-    }
-
-    .hero-panel {
-        margin-left: auto;
-        max-width: 470px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .container-home {
-        padding-top: 9rem;
-    }
-}
-
-
-/* Ubah warna utama biar lebih neon seperti Neotopia */
+/* ==================== IMPROVEMENTS ==================== */
 :root {
     --primary-color: #00e676;
     --accent-color: #00c853;
 }
 
-/* Hero Title lebih besar & impactful */
+/* Hero Title lebih besar */
 .home-content-wrapper h1 {
     font-size: clamp(2.8rem, 8vw, 5.8rem);
     line-height: 1.05;
@@ -389,7 +312,6 @@ section {
     padding: 1rem 2rem;
     min-height: 62px;
 }
-
 .secondary-btn {
     background: linear-gradient(135deg, #8b00ff, #c026d3);
     color: white;
@@ -400,7 +322,7 @@ section {
 
 /* Backdrop lebih dramatis */
 .home-backdrop {
-    background: 
+    background:
         linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
         url('../../images/home-gtps/image_150623.png') center/cover no-repeat;
 }
@@ -410,7 +332,6 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     margin-top: 2rem;
 }
-
 .mini-card strong {
     font-size: 1.35rem;
     color: #fff;
@@ -425,5 +346,20 @@ section {
     .hero-panel {
         margin: 2rem auto;
         max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero-mini-stats,
+    .panel-grid {
+        grid-template-columns: 1fr;
+    }
+    .people,
+    .peoplef {
+        display: none;
+    }
+    .home-backdrop {
+        border-radius: 0px;
+        margin-top: 0;
     }
 }
